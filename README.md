@@ -6,7 +6,8 @@ We are providing free SMS Gateway in sri lanka. Very Low Cost SMS Getway In Sri 
 
 For More Documentation <a href="http://knowledge.newsletters.lk">Knowledge Base</a>
 
-`include("newsletters.class.php");
+```php
+include("newsletters.class.php");
       $newsletters=new Newsletterslk;
       $newsletters->setUser('API KEY','API TOKEN');// Initializing User Api Key and Api Token
       $newsletters->setSenderID('YOUR SENDER ID');// Initializing Sender ID If you dont have any sender id do not use this line  and DEFAULT ID Is Web SMS
@@ -14,6 +15,6 @@ For More Documentation <a href="http://knowledge.newsletters.lk">Knowledge Base<
       
       $mysms->SendMessage('0777004416','hello my first web sms');
 
-`
+```
 
 <h1>Get you free sms gateway sri lanka from <a href="https://app.newsletters.lk/">Newsletters.lk</a>
