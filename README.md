@@ -1,6 +1,6 @@
 Newsletters.lk PHP API Integration Library.
 
-<h1>Signup and get your api details from <a href="https://app.newsletters.lk/">newsletters.lk</a>
+<h1>Signup and get your api details from <a href="https://app.newsletters.lk/">newsletters.lk</a></h1>
   
 We are providing free SMS Gateway in sri lanka. Very Low Cost SMS Getway In Sri Lanka.
 
