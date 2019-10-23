@@ -8,10 +8,10 @@ For More Documentation <a href="http://knowledge.newsletters.lk">Knowledge Base<
 
 ```php
 include("newsletters.class.php");
-      $newsletters=new Newsletterslk;
-      $newsletters->setUser('API KEY','API TOKEN');// Initializing User Api Key and Api Token
-      $newsletters->setSenderID('YOUR SENDER ID');// Initializing Sender ID If you dont have any sender id do not use this line  and DEFAULT ID Is Web SMS
-      $newsletters->msgType='sms';// Initializing Message Type
+$newsletters=new Newsletterslk;
+$newsletters->setUser('API KEY','API TOKEN');// Initializing User Api Key and Api Token
+$newsletters->setSenderID('YOUR SENDER ID');// Initializing Sender ID If you dont have any sender id do not use this line  and DEFAULT ID Is Web SMS
+$newsletters->msgType='sms';// Initializing Message Type
       
       $mysms->SendMessage('0777004416','hello my first web sms');
 
