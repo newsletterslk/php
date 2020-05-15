@@ -1,7 +1,7 @@
 <?php
 /**
  * Newsletters.lk SMS Client 
- * Version : PHP - V1
+ * Version : PHP - V1.2
  * Copyright @ 2017 - 2020 newsletters.lk
  * Customer Service : +94-(0)11-4348585
  * Email : support@newsletters.lk
@@ -143,6 +143,7 @@ class Newsletterslk {
      * @return boolen
      */
     public function SendMessage($Mobile,$TEXT,$json=FALSE){
+        $TEXT=urlencode($TEXT);
         if($this->sender_id !="" && $this->user_key !="" && $this->user_token !=""){
             if($Mobile){
                 if($TEXT){
@@ -151,7 +152,7 @@ class Newsletterslk {
                     if($this->msgType=="sms" || $this->msgType=="unicode"){
                         //SMS
                        $param.='&text='.$TEXT;
-                    }elseif($this->msgType=="voice" || $this->msgType="mms"){
+                    }elseif($this->msgType=="voice" || $this->msgType=="mms"){
                         //Voice And MMS
                         if($this->file){
                             $param.='&text='.$TEXT.'&file='.$this->file;
